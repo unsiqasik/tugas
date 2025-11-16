@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jadwal Konsultasi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-jadwal">
+  <header class="topbar">
+    <button class="hamburger" aria-label="menu">☰</button>
+    <div class="top-title">beranda_mhs</div>
+    <div class="user-dot" title="Profil">👤</div>
+  </header>
+
+  <main class="wrap">
+    <div class="app">
+      <aside class="decor"></aside>
+
+      <section class="panel">
+        <nav class="navtabs">
+          <a href="home.html">Beranda</a>
+          <a href="mahasiswa.html">Rencana Studi</a>
+          <a href="pesan.html">Pesan</a>
+          <a href="jadwal.html" class="active">Jadwal</a>
+          <a href="#" onclick="logout()">Logout</a>
+        </nav>
+
+        <h1 class="title">Jadwal konsultasi dosen wali</h1>
+        <div class="desc">Pilih hari dan ceklist oleh dosen</div>
+
+        <table class="table" aria-label="jadwal">
+          <thead><tr><th>No</th><th>Hari</th><th>Tanggal</th><th>Keterangan</th><th>Ceklist</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Senin</td><td>2025-11-17</td><td>Konsultasi umum</td><td></td></tr>
+            <tr><td>2</td><td>Rabu</td><td>2025-11-19</td><td>Konsultasi akademik</td><td></td></tr>
+          </tbody>
+        </table>
+
+      </section>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script> requireAuthOrRedirect(); </script>
+</body>
+</html>

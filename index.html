@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Sistem Mahasiswa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-login">
+  <main class="wrap">
+    <div class="mockup">
+      <div class="canvas">
+        <div class="panel login-panel">
+          <div class="login-left" aria-hidden="true"></div>
+
+          <div class="login-right">
+            <div class="brand">
+              <div class="logo-placeholder" aria-hidden="true">🎓</div>
+              <h3>Login</h3>
+            </div>
+
+            <h1 class="title">Masuk ke beranda_mhs</h1>
+            <p class="desc">Gunakan akun mahasiswa untuk mengakses data & jadwal</p>
+
+            <div class="field">
+              <label for="user">Username</label>
+              <input id="user" type="text" placeholder="Masukkan username" autocomplete="username">
+            </div>
+
+            <div class="field">
+              <label for="pass">Password</label>
+              <input id="pass" type="password" placeholder="Masukkan password" autocomplete="current-password">
+            </div>
+
+            <div class="actions">
+              <button id="btn" class="btn">LOGIN</button>
+              <button id="demo" class="btn secondary">Login demo</button>
+              <div id="msg" class="note" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    // small fallback for demo: demo credentials fill
+    document.getElementById('demo').addEventListener('click', () => {
+      document.getElementById('user').value = 'mhs';
+      document.getElementById('pass').value = '1234';
+    });
+  </script>
+</body>
+</html>

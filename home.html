@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beranda Mahasiswa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-home">
+  <header class="topbar">
+    <button class="hamburger" aria-label="menu">☰</button>
+    <div class="top-title">beranda_mhs</div>
+    <div class="user-dot" title="Profil">👤</div>
+  </header>
+
+  <main class="wrap">
+    <div class="app">
+      <aside class="decor"></aside>
+
+      <section class="panel">
+        <nav class="navtabs">
+          <a href="home.html" class="active">Beranda</a>
+          <a href="mahasiswa.html">Rencana Studi</a>
+          <a href="pesan.html">Pesan</a>
+          <a href="jadwal.html">Jadwal</a>
+          <a href="#" onclick="logout()">Logout</a>
+        </nav>
+
+        <div class="dashboard">
+          <div class="profile-card">
+            <div class="avatar">IMG</div>
+            <h4>Alex Sujiwo S.Kom</h4>
+            <p class="small">Teknik Informatika</p>
+          </div>
+
+          <div class="widgets">
+            <div class="widget big">Pesan Dosen</div>
+            <div class="widget chart">Grafik Semester</div>
+            <div class="widget schedule">Jadwal</div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script> requireAuthOrRedirect(); </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Optional: add exported images from Figma here (logo, illustrations).
